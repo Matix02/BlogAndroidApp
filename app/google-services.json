@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "43573396725",
+    "firebase_url": "https://bloggapp-c69c5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "bloggapp-c69c5",
+    "storage_bucket": "bloggapp-c69c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43573396725:android:7dee5328f674ef987171bc",
+        "android_client_info": {
+          "package_name": "com.example.blogandroidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43573396725-07n63h4mim5f541c0bcln2d4a8fmh4fj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgIa7tjryrQqu9c_rvI6mjEepFc3S5gK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43573396725-07n63h4mim5f541c0bcln2d4a8fmh4fj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
