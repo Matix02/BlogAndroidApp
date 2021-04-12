@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cyberpunk 2077. Patch 1.2 przesunięty, a powód nie zaskakuje"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_view_post"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/author_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autor: Mateusz Gęślowski"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/time_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Czas: 3:10 PM"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data; Wednesday, March 10, 2021"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/description_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jeszcze w lutym gracze mieli ujrzeć największą do tej pory popremierową aktualizację asdas
+                              asdasdasdasd asd asd asd asd safdsdf sdafg fgfdgh gfhj gj hg jghj rty es sdfg dfsg dfijhg dkjfh gdfjs ghsdjf ghjsdkfghjsd
+                              kfhg jdhdjfg hdfjkghdfjk ghdfkjghasjkgasdjhfg fdhg dfsgj dfkgjadkg jadfk gjdfkgjadfkgj adkfgjadkf gjdafklg jdafk gl"
+                />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+</androidx.cardview.widget.CardView>

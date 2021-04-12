@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
 
     <com.google.android.material.circularreveal.CircularRevealFrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginVertical="25dp"
         android:layout_marginHorizontal="30dp"
-        android:background="@color/cardview_dark_background">
+        android:padding="10dp"
+        android:background="@color/web_bg_main_color">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,19 +27,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15sp"
                 android:text="Napisz do nas!" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Nazwa" />
+                android:text="Nazwa"
+                style="@style/FontTheme"
+                />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/editTextTextPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:layout_marginBottom="15sp"
                 android:inputType="textPersonName"
                 android:textColor="@color/white"
                 android:text="Nick lub Imię i Nazwisko" />
@@ -43,39 +54,49 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Typ zgłoszenia" />
+                android:text="Typ zgłoszenia"
+                style="@style/FontTheme"
+                />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
+                android:layout_marginBottom="15sp"
                 />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Podoba Ci się strona?" />
+                android:text="Podoba Ci się strona?"
+                style="@style/FontTheme"
+                />
 
             <androidx.appcompat.widget.AppCompatCheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
+                android:layout_marginBottom="15sp"
                 android:text="Oczywiście!"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:text="Treść" />
+                android:text="Treść"
+                style="@style/FontTheme"
+                />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/etMessageBox"
                 android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:autoLink="all"
-                android:hint="Twoja wiadomosc"
+                android:hint="Twoja wiadomość"
+                android:layout_marginBottom="20sp"
                 android:lines="5"
                 android:minLines="1"
                 android:maxLines="10"
@@ -85,11 +106,11 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Wyslij!"/>
+                android:layout_height="70dp"
+                android:text="Wyślij!" />
 
         </LinearLayout>
-
     </com.google.android.material.circularreveal.CircularRevealFrameLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
