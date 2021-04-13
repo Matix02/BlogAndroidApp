@@ -1,10 +1,10 @@
 package com.example.blogandroidapp
 
-data class BlogPost(val imageResource: String,
-                    val title: String,
-                    val author: String,
-                    val desc: String,
-                    val time: String,
-                    val date: String) {
+data class BlogPost(val image: String = "DEFAULT URL",
+                    val title: String = "DEFAULT TITLE",
+                    val userName: String = "DEFAULT AUTHOR",
+                    val desc: String = "DEFAULT DESCRIPTION",
+                    val time: String = "DEFAULT TIME",
+                    val date: String = "DEFAULT DATE") {
 
 }

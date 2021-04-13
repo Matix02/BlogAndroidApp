@@ -29,8 +29,8 @@ class BlogAdapter(private val context: Context) : RecyclerView.Adapter<BlogAdapt
         val currentItem = postList[position]
 
         holder.titleTextView.text = currentItem.title
-        Glide.with(context).load(currentItem.imageResource).into(holder.imageView)
-        holder.authorTextView.text = currentItem.author
+        Glide.with(context).load(currentItem.image).into(holder.imageView)
+        holder.authorTextView.text = currentItem.userName
         holder.descTextView.text = currentItem.desc
         holder.dateTextView.text = currentItem.date
         holder.timeTextView.text = currentItem.time
