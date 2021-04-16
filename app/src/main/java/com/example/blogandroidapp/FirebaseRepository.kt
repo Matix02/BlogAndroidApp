@@ -25,7 +25,7 @@ class FirebaseRepository {
 //        }.addOnFailureListener{
 //            Log.e("firebase", "Error getting data")
 //        }
-        FirebaseDatabase.getInstance().getReference("Blogs").addValueEventListener(object: ValueEventListener {
+        FirebaseDatabase.getInstance().getReference("Blogs").orderByChild("counter").addValueEventListener(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val listData: ArrayList<BlogPost> = ArrayList()
 
@@ -37,7 +37,7 @@ class FirebaseRepository {
                     val postDate: String = i.getValue(BlogPost::class.java)?.date ?: "Data"
                     val postDescription: String = i.getValue(BlogPost::class.java)?.desc ?: "Opis"
 
-                    val blogPost = BlogPost(postImg, postAuthor,postTitle,postDescription,postTime, postDate)
+                    val blogPost = BlogPost(postImg, postTitle, postAuthor,postDescription,postTime, postDate)
 
                     listData.add(blogPost)
                     Log.e("firebase", "Error getting data = $i")

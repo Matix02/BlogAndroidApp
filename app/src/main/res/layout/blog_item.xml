@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,31 +18,73 @@
                 android:id="@+id/title_post"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
                 android:text="Cyberpunk 2077. Patch 1.2 przesunięty, a powód nie zaskakuje"
                 />
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_post"
-                android:layout_width="350dp"
-                android:layout_height="100dp"
+                android:layout_width="375dp"
+                android:layout_height="200dp"
                 />
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/author_post"
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Autor: Mateusz Gęślowski"
-                />
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/time_post"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/autor_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Autor:" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/author_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mateusz Gęślowski" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Czas: 3:10 PM"
-                />
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/date_post"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Czas:" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/time_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:10 PM" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Data; Wednesday, March 10, 2021"
-                />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Data:" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/date_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday, March 10, 2021" />
+
+            </LinearLayout>
+
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/description_post"
                 android:layout_width="match_parent"
