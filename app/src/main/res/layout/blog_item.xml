@@ -7,11 +7,16 @@
     <com.google.android.material.circularreveal.CircularRevealRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/shape"
         >
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:padding="10sp"
             >
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -19,69 +24,104 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textAlignment="center"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="20sp"
+                android:textSize="25sp"
                 android:text="Cyberpunk 2077. Patch 1.2 przesunięty, a powód nie zaskakuje"
                 />
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/image_view_post"
-                android:layout_width="375dp"
+                android:layout_width="325dp"
                 android:layout_height="200dp"
+                android:layout_marginBottom="20sp"
                 />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="20sp"
+                >
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/autor_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Autor:" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    android:text="Autor: "
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/author_post"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Mateusz Gęślowski" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="Mateusz Gęślowski"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="20sp"
+                >
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/time_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Czas:" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    android:text="Czas: "
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/time_post"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="3:10 PM" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    android:text="3:10 PM"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginBottom="50sp"
+                >
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/date_label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Data:" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    android:text="Data: "
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/date_post"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Wednesday, March 10, 2021" />
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    android:text="Wednesday, March 10, 2021"
+                    />
 
             </LinearLayout>
 
@@ -89,6 +129,11 @@
                 android:id="@+id/description_post"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textColor="@color/black"
+                android:paddingBottom="25sp"
+                android:textSize="17sp"
+
                 android:text="Jeszcze w lutym gracze mieli ujrzeć największą do tej pory popremierową aktualizację asdas
                               asdasdasdasd asd asd asd asd safdsdf sdafg fgfdgh gfhj gj hg jghj rty es sdfg dfsg dfijhg dkjfh gdfjs ghsdjf ghjsdkfghjsd
                               kfhg jdhdjfg hdfjkghdfjk ghdfkjghasjkgasdjhfg fdhg dfsgj dfkgjadkg jadfk gjdfkgjadfkgj adkfgjadkf gjdafklg jdafk gl"

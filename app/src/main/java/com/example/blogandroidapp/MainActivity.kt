@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
         recycleView.layoutManager = LinearLayoutManager(this)
         recycleView.adapter = adapter
 
-        val dummnyList = mutableListOf<BlogPost>()
+        /*val dummnyList = mutableListOf<BlogPost>()
         dummnyList.add(BlogPost("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png",
         "Cos tam", "Ja","ASdjaskjjdaksdjkas", "2:10 PM", "Wednesday, March 10, 2021"))
-
+*/
 
        // adapter.setListData(dummnyList)
         observeData()

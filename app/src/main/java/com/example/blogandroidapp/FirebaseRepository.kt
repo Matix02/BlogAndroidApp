@@ -42,8 +42,8 @@ class FirebaseRepository {
                     listData.add(blogPost)
                     Log.e("firebase", "Error getting data = $i")
                 }
-                listData.add(BlogPost("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png",
-                    "FIERBaSE DZIAła", "TAK SERIO","ASdjaskjjdaksdjkas", "2:10 PM", "Wednesday, March 10, 2021"))
+               /* listData.add(BlogPost("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/1200px-Flat_tick_icon.svg.png",
+                    "FIERBaSE DZIAła", "TAK SERIO","ASdjaskjjdaksdjkas", "2:10 PM", "Wednesday, March 10, 2021"))*/
              mutableData.value = listData
             }
             override fun onCancelled(error: DatabaseError) {
