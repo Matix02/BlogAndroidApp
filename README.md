@@ -6,7 +6,18 @@ Posts are added from a dedicated website and from the appropriate form. The text
 
 This app was built for my project for second degree in my diploma to compare the differences between them Progressive Web Application and describe it.
 
-Technology / functions used to build:
+## Technology / functions used to build:
 - Kotlin
 - MVVM pattern
 - NoSQL Firebase database
+
+## Images: 
+
+### Main Screen - News: 
+<p align="center">
+<img src="https://i.ibb.co/7n2LjW4/Zrzut-ekranu-2021-05-24-123822.png" alt="Zrzut-ekranu-2021-05-24-123822" border="0">
+<img src="https://i.ibb.co/ZKLvD5Q/Zrzut-ekranu-2021-05-24-123906.png" alt="Zrzut-ekranu-2021-05-24-123906" border="0"></p>
+  
+ ### Contact Form: 
+<p align="center">
+<img src="https://i.ibb.co/YQRnPpD/Zrzut-ekranu-2021-05-24-123928.png" alt="Zrzut-ekranu-2021-05-24-123928" border="0"></p>
