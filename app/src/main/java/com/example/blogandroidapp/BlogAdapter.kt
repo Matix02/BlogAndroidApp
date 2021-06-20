@@ -20,7 +20,7 @@ class BlogAdapter(private val context: Context) : RecyclerView.Adapter<BlogAdapt
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
         val itemView = LayoutInflater.from(context).inflate(R.layout.blog_item,
-                parent, false)
+            parent, false)
 
         return PostViewHolder(itemView)
     }

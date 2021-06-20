@@ -45,6 +45,7 @@ class ContactActivity : AppCompatActivity() {
         }
 
     }
+
     override fun onBackPressed() {
         super.onBackPressed()
         return

@@ -5,6 +5,4 @@ data class BlogPost(val image: String = "DEFAULT URL",
                     val userName: String = "DEFAULT AUTHOR",
                     val desc: String = "DEFAULT DESCRIPTION",
                     val time: String = "DEFAULT TIME",
-                    val date: String = "DEFAULT DATE") {
-
-}
+                    val date: String = "DEFAULT DATE")
